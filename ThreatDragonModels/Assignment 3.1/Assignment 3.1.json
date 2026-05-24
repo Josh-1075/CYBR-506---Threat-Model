@@ -46,8 +46,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "a6e07df7-1f6e-4b59-972b-80765e442b52",
             "zIndex": -1,
+            "id": "a6e07df7-1f6e-4b59-972b-80765e442b52",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "                       DMZ",
@@ -84,8 +84,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "37f65839-3ce0-4f48-a235-f22b4923a62c",
             "zIndex": -1,
+            "id": "37f65839-3ce0-4f48-a235-f22b4923a62c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "               Internal Network",
@@ -127,6 +127,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -210,7 +211,6 @@
               ]
             },
             "id": "315f47a6-f872-490d-921e-b33442aba701",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customers",
@@ -244,6 +244,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -327,7 +328,6 @@
               ]
             },
             "id": "df5d1078-4e02-43c2-be27-f766307713aa",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Providers",
@@ -361,6 +361,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -444,7 +445,6 @@
               ]
             },
             "id": "1e3008fc-3106-4981-a417-62f1b0f0ef04",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Remote Workers",
@@ -478,6 +478,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -561,7 +562,6 @@
               ]
             },
             "id": "f1b9f0c4-87a1-4e60-a927-dc87644f69e4",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Web Portal",
@@ -574,7 +574,29 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ecf37916-a91e-4971-8992-9e0840338b19",
+                  "title": "Customer accessing Web Portal",
+                  "status": "NotApplicable",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Credential stuffing attack against customer accounts.\nSO-2",
+                  "mitigation": "MFA, rate limiting, password policies, login anomaly detection",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 10,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -598,6 +620,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -694,8 +717,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 5
+            }
           },
           {
             "position": {
@@ -718,6 +740,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -814,8 +837,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 6
+            }
           },
           {
             "position": {
@@ -828,7 +850,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Wireless \nAccess Point"
+                "text": "Enterprise\nWireless \nAccess Point"
               },
               "body": {
                 "stroke": "#333333",
@@ -838,6 +860,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -923,7 +946,7 @@
             "id": "487e3b68-412d-4965-9692-985b58da4ec0",
             "data": {
               "type": "tm.Process",
-              "name": "Wireless \nAccess Point",
+              "name": "Enterprise\nWireless \nAccess Point",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -934,8 +957,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 7
+            }
           },
           {
             "shape": "flow",
@@ -1393,6 +1415,100 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wireless \nLAN \nAccess",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Wireless \nLAN \nAccess"
+            ],
+            "id": "38b27a9f-5cad-4ef0-ba16-24407e98b5ac",
+            "source": {
+              "cell": "315f47a6-f872-490d-921e-b33442aba701",
+              "port": "9dbb1863-8bb5-4231-a4c9-407b4aaa2a6e"
+            },
+            "target": {
+              "cell": "fe76fbad-9c6e-4239-a81e-ccd2b6d2744d",
+              "port": "a0e8cdb2-c648-4040-a8e0-dc675731b66f"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wireless \nLAN \nAccess",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Wireless \nLAN \nAccess"
+            ],
+            "id": "e7c7725c-83b6-4fa0-9d6f-3d09c573e99e",
+            "source": {
+              "cell": "df5d1078-4e02-43c2-be27-f766307713aa",
+              "port": "9dbb1863-8bb5-4231-a4c9-407b4aaa2a6e"
+            },
+            "target": {
+              "cell": "fe76fbad-9c6e-4239-a81e-ccd2b6d2744d",
+              "port": "a0e8cdb2-c648-4040-a8e0-dc675731b66f"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 536.25,
               "y": 430
@@ -1416,6 +1532,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1499,7 +1616,6 @@
               ]
             },
             "id": "569f2979-04e5-4146-a9c1-14d47254536f",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "PHI DB",
@@ -1513,7 +1629,27 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "312f71b2-cdaa-4bb5-8721-6aa6e05d9f7b",
+                  "title": "PHI Database",
+                  "status": "NotApplicable",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access exposing HIPPA protected ePHI.\nSO-1",
+                  "mitigation": "Encryption at rest, RBAC, least privilege, auditing",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1540,6 +1676,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1623,7 +1760,6 @@
               ]
             },
             "id": "b87f52f7-0bd7-41be-ab7d-6e4c007bb542",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Corporate Data",
@@ -1664,6 +1800,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1747,7 +1884,6 @@
               ]
             },
             "id": "d83ed830-a95e-4b73-b1cd-57917728389d",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Offsite Backup",
@@ -1765,10 +1901,137 @@
             }
           },
           {
+            "position": {
+              "x": 120,
+              "y": -123.99999999999994
+            },
+            "size": {
+              "width": 110,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Wireless \nAccess \nPoint"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "88086baf-e5fe-456b-b916-f1a52e90c68e"
+                },
+                {
+                  "group": "right",
+                  "id": "01a9f0f7-6f94-4839-871d-af2681b8ac07"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a0e8cdb2-c648-4040-a8e0-dc675731b66f"
+                },
+                {
+                  "group": "left",
+                  "id": "30d6f85c-8909-406f-a13e-bc181cba1635"
+                }
+              ]
+            },
+            "id": "fe76fbad-9c6e-4239-a81e-ccd2b6d2744d",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Process",
+              "name": "Wireless \nAccess \nPoint",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
-            "zIndex": 14,
+            "zIndex": 16,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -1784,12 +2047,67 @@
             ],
             "id": "18f2b861-0c9c-4d62-a6fe-21686e5f5553",
             "source": {
-              "x": -140,
+              "x": -10,
               "y": 120
             },
             "target": {
-              "x": 730,
+              "x": 540,
               "y": 120
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           }
         ]
@@ -1797,6 +2115,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 3
   }
 }

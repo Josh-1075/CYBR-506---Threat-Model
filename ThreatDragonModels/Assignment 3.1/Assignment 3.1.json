@@ -7,7 +7,20 @@
     "id": 0
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "Josh"
+      },
+      {
+        "name": "Jonathan"
+      },
+      {
+        "name": "Matt"
+      },
+      {
+        "name": "Arthur"
+      }
+    ],
     "diagrams": [
       {
         "id": 0,

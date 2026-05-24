@@ -1,0 +1,39 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "Placebo",
+    "owner": "506-5",
+    "description": "Assignment 3.1",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Jonathan"
+      },
+      {
+        "name": "Josh"
+      },
+      {
+        "name": "Matt"
+      },
+      {
+        "name": "Arthur"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Placebo Threat Model",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}

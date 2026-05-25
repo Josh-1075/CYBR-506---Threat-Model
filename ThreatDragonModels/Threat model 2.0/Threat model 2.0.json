@@ -80,8 +80,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "50a2c6ce-c08f-430e-b258-745701e3d1f5",
             "zIndex": -1,
+            "id": "50a2c6ce-c08f-430e-b258-745701e3d1f5",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "\n\n\n\n\n\n\nDMZ",
@@ -98,13 +98,6 @@
                 "33cbd3a6-19d7-49fa-868c-422fd2c2f37a",
                 "32cfe86e-ea92-49c4-8820-92f0bd308279"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -128,6 +121,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -211,7 +205,6 @@
               ]
             },
             "id": "9efb819a-bfd5-4f4d-bec5-4ccb462e1cc5",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -245,6 +238,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -328,7 +322,6 @@
               ]
             },
             "id": "1448d3ef-3688-4375-b574-94d4b4555bb3",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Providers",
@@ -362,6 +355,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -445,7 +439,6 @@
               ]
             },
             "id": "bf6732c4-b8a2-4b07-84bc-0caf43303467",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Remote Workers",
@@ -654,7 +647,13 @@
             "target": {
               "x": 440,
               "y": 370
-            }
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 350
+              }
+            ]
           },
           {
             "position": {
@@ -677,6 +676,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -760,7 +760,6 @@
               ]
             },
             "id": "0cb262bd-e825-4d11-9359-64ecf1ba07f0",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "External\nFW",
@@ -889,6 +888,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -972,7 +972,6 @@
               ]
             },
             "id": "6ef0f344-db62-4af4-a150-4ecb4ec2beb8",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Web Portal",
@@ -1009,6 +1008,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1092,7 +1092,6 @@
               ]
             },
             "id": "33cbd3a6-19d7-49fa-868c-422fd2c2f37a",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "VPN GW",
@@ -1124,8 +1123,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "32cfe86e-ea92-49c4-8820-92f0bd308279",
             "zIndex": 16,
+            "id": "32cfe86e-ea92-49c4-8820-92f0bd308279",
             "data": {
               "type": "tm.Text",
               "name": "Inspected HTTPS\nTraffic",
@@ -1230,211 +1229,11 @@
                 "x": 560,
                 "y": 320
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
-              "x": 434,
+              "x": 445.25,
               "y": 338
             },
             "size": {
@@ -1453,6 +1252,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -1536,7 +1336,6 @@
               ]
             },
             "id": "78969e7f-cdeb-432a-a620-563faa98f814",
-            "zIndex": 19,
             "data": {
               "type": "tm.Process",
               "name": "Internal \nFW",

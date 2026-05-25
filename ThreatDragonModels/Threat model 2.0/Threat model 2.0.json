@@ -623,7 +623,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "FW Database Queries",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -637,7 +637,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "FW Database Queries"
             ],
             "id": "ac84c571-0fb0-414c-8263-7608bf7564c4",
             "source": {
@@ -1350,6 +1350,58 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 20,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Secured Database Queries",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Secured Database Queries"
+            ],
+            "id": "93a2f977-cd8e-4d48-965c-ddbe0abd4e16",
+            "source": {
+              "x": 434,
+              "y": 387
+            },
+            "target": {
+              "x": 290,
+              "y": 430
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 387
+              }
+            ]
           }
         ]
       }

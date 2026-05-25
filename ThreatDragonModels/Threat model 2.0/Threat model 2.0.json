@@ -31,40 +31,6 @@
         "version": "2.6.2",
         "cells": [
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": -1,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Internet",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "22f72841-0bfb-4499-aea4-034b9d239b85",
-            "source": {
-              "x": 20,
-              "y": 98
-            },
-            "target": {
-              "x": 1110,
-              "y": 100
-            },
-            "vertices": [
-              {
-                "x": 580,
-                "y": 98
-              }
-            ]
-          },
-          {
             "position": {
               "x": 100.25,
               "y": 175
@@ -197,6 +163,40 @@
                 "e32c4ea8-7420-4452-8c97-2efe7596e779"
               ]
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "22f72841-0bfb-4499-aea4-034b9d239b85",
+            "source": {
+              "x": 20,
+              "y": 98
+            },
+            "target": {
+              "x": 2230,
+              "y": 100
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 98
+              }
+            ]
           },
           {
             "position": {

@@ -102,6 +102,73 @@
           },
           {
             "position": {
+              "x": 919.999999999998,
+              "y": 450.0000000000002
+            },
+            "size": {
+              "width": 130,
+              "height": 360
+            },
+            "attrs": {
+              "label": {
+                "text": "Employee\nWireless\n(Trusted)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "7503213e-4b05-4b94-a51a-fee5cbdd3175",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Employee\nWireless\n(Trusted)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "c7a8df50-747b-4a59-89e1-b9a22e3c9d99"
+              ],
+              "containedElements": [
+                "1a7a82a4-2444-4979-b7fc-4ce78db5dcd7",
+                "62c23690-29e4-45b1-a889-fbb35878792d"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1152,
+              "y": 450.0000000000002
+            },
+            "size": {
+              "width": 130,
+              "height": 390
+            },
+            "attrs": {
+              "label": {
+                "text": "Guest/Provider\nWireless\n(Untrusted)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "ca00637d-8e84-48a6-8650-9d3eef05abd2",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Guest/Provider\nWireless\n(Untrusted)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "a1fb0e21-ed6d-43bf-a71d-3932ea16d2fb"
+              ],
+              "containedElements": [
+                "39b96d61-4d9b-48d3-9ed2-82b49d6ba125",
+                "7bdceaf9-7c06-4458-b7ab-8254b28a55a4",
+                "dde5a823-a858-4299-9a36-a4713f7b127a"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 140,
               "y": 20
             },
@@ -798,6 +865,149 @@
               "x": 760,
               "y": 610
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7503213e-4b05-4b94-a51a-fee5cbdd3175"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "c7a8df50-747b-4a59-89e1-b9a22e3c9d99",
+            "source": {
+              "x": 966,
+              "y": 570
+            },
+            "target": {
+              "cell": "62c23690-29e4-45b1-a889-fbb35878792d",
+              "port": "4cc7da7e-41b5-4484-b39a-6e912d3c14c2"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "4d839152-a81f-4160-8cbd-069e43023c44",
+            "source": {
+              "x": 1201,
+              "y": 570
+            },
+            "target": {
+              "x": 1200,
+              "y": 630
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "ca00637d-8e84-48a6-8650-9d3eef05abd2"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "a1fb0e21-ed6d-43bf-a71d-3932ea16d2fb",
+            "source": {
+              "x": 1213,
+              "y": 680
+            },
+            "target": {
+              "cell": "dde5a823-a858-4299-9a36-a4713f7b127a",
+              "port": "4cc7da7e-41b5-4484-b39a-6e912d3c14c2"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -2179,6 +2389,618 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 940,
+              "y": 510
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Employee\nWireless\nAP"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "628fc7e9-d282-49e2-a199-b4c8c123dcaf"
+                },
+                {
+                  "group": "right",
+                  "id": "8d9e349b-75d7-441b-bf0b-cf10517382ed"
+                },
+                {
+                  "group": "bottom",
+                  "id": "68d7e0e1-466a-4f8e-8211-3f496aa0dfd9"
+                },
+                {
+                  "group": "left",
+                  "id": "708b4405-391b-4cb1-99ed-49b189382492"
+                }
+              ]
+            },
+            "id": "1a7a82a4-2444-4979-b7fc-4ce78db5dcd7",
+            "zIndex": 28,
+            "data": {
+              "type": "tm.Process",
+              "name": "Employee\nWireless\nAP",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1176,
+              "y": 510
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Guest/Provider\nWireless\nAP"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "628fc7e9-d282-49e2-a199-b4c8c123dcaf"
+                },
+                {
+                  "group": "right",
+                  "id": "8d9e349b-75d7-441b-bf0b-cf10517382ed"
+                },
+                {
+                  "group": "bottom",
+                  "id": "68d7e0e1-466a-4f8e-8211-3f496aa0dfd9"
+                },
+                {
+                  "group": "left",
+                  "id": "708b4405-391b-4cb1-99ed-49b189382492"
+                }
+              ]
+            },
+            "id": "39b96d61-4d9b-48d3-9ed2-82b49d6ba125",
+            "zIndex": 30,
+            "data": {
+              "type": "tm.Process",
+              "name": "Guest/Provider\nWireless\nAP",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1157,
+              "y": 625
+            },
+            "size": {
+              "width": 120,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Guest \nVLAN"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4cc7da7e-41b5-4484-b39a-6e912d3c14c2"
+                },
+                {
+                  "group": "right",
+                  "id": "2d128e6f-3ee1-4088-a084-d8a614afb23a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9419e9ef-7d3d-4a69-a190-769bb8aa97fd"
+                },
+                {
+                  "group": "left",
+                  "id": "27aefa3b-2246-4852-882f-a80e30fd87c6"
+                }
+              ]
+            },
+            "id": "7bdceaf9-7c06-4458-b7ab-8254b28a55a4",
+            "zIndex": 31,
+            "data": {
+              "type": "tm.Store",
+              "name": "Guest \nVLAN",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 924.999999999998,
+              "y": 650
+            },
+            "size": {
+              "width": 120,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Employee \nVLAN"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4cc7da7e-41b5-4484-b39a-6e912d3c14c2"
+                },
+                {
+                  "group": "right",
+                  "id": "2d128e6f-3ee1-4088-a084-d8a614afb23a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9419e9ef-7d3d-4a69-a190-769bb8aa97fd"
+                },
+                {
+                  "group": "left",
+                  "id": "27aefa3b-2246-4852-882f-a80e30fd87c6"
+                }
+              ]
+            },
+            "id": "62c23690-29e4-45b1-a889-fbb35878792d",
+            "zIndex": 32,
+            "data": {
+              "type": "tm.Store",
+              "name": "Employee \nVLAN",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1157,
+              "y": 728
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Internet/Restricted\nPortal Access\nOnly"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4cc7da7e-41b5-4484-b39a-6e912d3c14c2"
+                },
+                {
+                  "group": "right",
+                  "id": "2d128e6f-3ee1-4088-a084-d8a614afb23a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9419e9ef-7d3d-4a69-a190-769bb8aa97fd"
+                },
+                {
+                  "group": "left",
+                  "id": "27aefa3b-2246-4852-882f-a80e30fd87c6"
+                }
+              ]
+            },
+            "id": "dde5a823-a858-4299-9a36-a4713f7b127a",
+            "zIndex": 33,
+            "data": {
+              "type": "tm.Store",
+              "name": "Internet/Restricted\nPortal Access\nOnly",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
               "threats": []
             }
           }

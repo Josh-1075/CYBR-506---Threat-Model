@@ -125,7 +125,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "a1fb0e21-ed6d-43bf-a71d-3932ea16d2fb"
+                "a1fb0e21-ed6d-43bf-a71d-3932ea16d2fb",
+                "48d0ecb6-d2b3-427e-b1f1-a382b7df7661"
               ],
               "containedElements": [
                 "39b96d61-4d9b-48d3-9ed2-82b49d6ba125",
@@ -3424,6 +3425,60 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 36,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "ca00637d-8e84-48a6-8650-9d3eef05abd2"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "48d0ecb6-d2b3-427e-b1f1-a382b7df7661",
+            "source": {
+              "x": 1374,
+              "y": 115
+            },
+            "target": {
+              "cell": "7bdceaf9-7c06-4458-b7ab-8254b28a55a4",
+              "port": "2d128e6f-3ee1-4088-a084-d8a614afb23a"
+            },
+            "vertices": [
+              {
+                "x": 1374,
+                "y": 580
+              }
+            ]
           }
         ]
       }

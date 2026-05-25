@@ -125,7 +125,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "c7a8df50-747b-4a59-89e1-b9a22e3c9d99"
+                "c7a8df50-747b-4a59-89e1-b9a22e3c9d99",
+                "70c44ccd-3a82-4af2-9d2e-d91ed50297d0"
               ],
               "containedElements": [
                 "1a7a82a4-2444-4979-b7fc-4ce78db5dcd7",
@@ -183,8 +184,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "ac58d349-e731-4eae-99ae-626e7d23b84e",
             "zIndex": -1,
+            "id": "ac58d349-e731-4eae-99ae-626e7d23b84e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Offsite/Cloud\nBoundary",
@@ -1139,6 +1140,54 @@
             "target": {
               "x": 1760,
               "y": 750
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7503213e-4b05-4b94-a51a-fee5cbdd3175"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "70c44ccd-3a82-4af2-9d2e-d91ed50297d0",
+            "source": {
+              "x": 780,
+              "y": 645
+            },
+            "target": {
+              "cell": "62c23690-29e4-45b1-a889-fbb35878792d",
+              "port": "27aefa3b-2246-4852-882f-a80e30fd87c6"
             }
           },
           {
@@ -3157,6 +3206,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 34,
             "ports": {
               "groups": {
                 "top": {
@@ -3240,7 +3290,6 @@
               ]
             },
             "id": "905018f5-4075-46bc-b9bb-65823c4580ca",
-            "zIndex": 34,
             "data": {
               "type": "tm.Process",
               "name": "Backup\nServer",
@@ -3277,6 +3326,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 35,
             "ports": {
               "groups": {
                 "top": {
@@ -3360,7 +3410,6 @@
               ]
             },
             "id": "e32c4ea8-7420-4452-8c97-2efe7596e779",
-            "zIndex": 35,
             "data": {
               "type": "tm.Process",
               "name": "Offsite\nBackup",
